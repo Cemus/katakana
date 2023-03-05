@@ -55,7 +55,7 @@ function romajiReset(){
 }
 
 function Loop(){
-    setInterval(Spawn(),Math.floor(Math.random() * (2000 - 1000 + 1) + 1000));
+    setInterval(Spawn,Math.floor(Math.random() * (2000 - 1000 + 1) + 1000));
 }
 
 function randomisedImage(array){
@@ -74,7 +74,7 @@ function getSymbol(image){
 
 for (i = 0; i < 10; i++){
     allKata = document.getElementsByClassName("symbol");
-    const vspeed = 24;
+    const vspeed = 50;
     let elemRect = document.getElementById("romaji").getBoundingClientRect(),
     offset = elemRect.top;
     setInterval(() => {
@@ -92,7 +92,7 @@ for (i = 0; i < 10; i++){
 
 Loop();
 
-Spawn();
+
 
 
 
