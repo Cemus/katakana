@@ -1,0 +1,56 @@
+:root{
+    --color: white;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+    background-color: black;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    color: white;
+    height: 5vh;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border:dotted var(--color, red);
+    border-radius: 1em;
+    z-index: 2;
+}
+
+#screen{
+    background-color: black;
+    flex: 1;
+}
+
+.symbol{
+    position: absolute;
+    top: 0;
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(199deg) brightness(103%) contrast(101%);
+    z-index: 1;
+    bottom: 0;
+}
+
+input[type=text]{
+    text-align: center;
+    font-size: 2rem;
+    align-self: center;
+    text-transform:uppercase;
+    border-radius: 2rem;
+    border: solid gray;
+    height: 10vh;
+    width: 50%;
+    margin: 2vh;
+}
+input[type=text]:focus {
+    outline: none;
+  }
